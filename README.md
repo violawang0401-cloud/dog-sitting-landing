@@ -9,7 +9,7 @@ Open `index.html` directly in a modern browser. No build step or local server is
 ### Implementation
 
 - HTML5 and vanilla CSS only; no framework, preprocessor, or build tooling.
-- Uses the supplied imagery and Figma typography: Quicksand (500/700), with Inter 500 for desktop service-card headings.
+- Uses the supplied imagery and Figma typography: Inter (500/700) throughout, with Quicksand 500 used only for mobile service-card headings.
 - Layouts adapt from a three-card desktop grid, through horizontal tablet cards, to stacked mobile cards.
 
 ### Design decisions
