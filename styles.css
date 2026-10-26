@@ -191,6 +191,7 @@ a {
 
 .service-card h3 {
     color: var(--heading);
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 1;
@@ -198,8 +199,8 @@ a {
 
 .service-card p {
     color: var(--text);
-    font-size: 16px;
-    line-height: 1.15;
+    font-size: 18px;
+    line-height: 1;
 }
 
 .service-card__link {
@@ -330,12 +331,17 @@ a {
     }
 
     .service-card h3 {
-        font-size: 32px;
-        font-weight: 700;
+        font-family: var(--font-main);
+        font-size: 20px;
+        font-weight: 500;
     }
 
     .service-card p {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .service-card__link {
+        font-size: 16px;
     }
 }
