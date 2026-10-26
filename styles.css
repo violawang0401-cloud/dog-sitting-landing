@@ -1,6 +1,5 @@
 :root {
-    --font-main: "Inter", sans-serif;
-    --font-card-mobile: "Quicksand", sans-serif;
+    --font-main: "Quicksand", sans-serif;
     --accent: #de6c17;
     --accent-active: #c95f12;
     --text: #5e6e66;
@@ -15,7 +14,7 @@
 }
 
 html {
-    font-family: var(--font-main);
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     line-height: 1.5;
 }
@@ -332,7 +331,7 @@ a {
     }
 
     .service-card h3 {
-        font-family: var(--font-card-mobile);
+        font-family: var(--font-main);
         font-size: 20px;
         font-weight: 500;
     }
