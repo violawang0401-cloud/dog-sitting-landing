@@ -3,6 +3,7 @@
     --accent: #de6c17;
     --accent-active: #c95f12;
     --text: #5e6e66;
+    --heading: #36413c;
     --white: #ffffff;
 }
 
@@ -20,6 +21,8 @@ html {
 
 body,
 h1,
+h2,
+h3,
 p {
     margin: 0;
 }
@@ -91,7 +94,7 @@ a {
 .hero__button {
     align-items: center;
     background-color: var(--accent);
-    border-radius: 5px;
+    border-radius: 4px;
     color: var(--white);
     display: inline-flex;
     font-size: 18px;
@@ -110,6 +113,112 @@ a {
 
 .hero__button:focus-visible {
     outline: 2px solid var(--white);
+    outline-offset: 3px;
+}
+
+/* Services */
+.services {
+    background-color: var(--white);
+    padding: 80px 24px;
+}
+
+.services__inner {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.services__intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto 80px;
+    max-width: 689px;
+    text-align: center;
+}
+
+.services__intro h2 {
+    color: var(--heading);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.services__intro p {
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1;
+}
+
+.services__cards {
+    display: flex;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex: 0 1 calc((100% - 60px) / 3);
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.service-card > img {
+    aspect-ratio: 380 / 266.39;
+    object-fit: cover;
+    width: 100%;
+}
+
+.service-card__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 24px 24px;
+}
+
+.service-card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-card h3 {
+    color: var(--heading);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.service-card p {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.15;
+}
+
+.service-card__link {
+    align-items: center;
+    color: var(--accent);
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 12px;
+    line-height: 1;
+    transition: color 300ms ease-out;
+    width: max-content;
+}
+
+.service-card__link:hover,
+.service-card__link:focus-visible {
+    color: var(--accent-active);
+}
+
+.service-card__link:focus-visible {
+    outline: 2px solid currentcolor;
     outline-offset: 3px;
 }
 
@@ -153,4 +262,3 @@ a {
         min-width: 132px;
     }
 }
-
